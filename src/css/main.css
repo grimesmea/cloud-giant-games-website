@@ -92,14 +92,13 @@ a.navbar-brand.company-name {
   font-family: 'Hind', sans-serif;
 }
 
-.tagline {
-  max-width: 100vh;
-  color: #ef672b;
-}
-
 .logo-full {
   height: 50vh;
   margin: auto;
+}
+
+.tagline {
+  color: #ef672b;
 }
 
 /* ========
