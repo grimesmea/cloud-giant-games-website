@@ -11,7 +11,7 @@ html {
 body {
   font-family: 'Roboto Condensed', sans-serif;
   color: #262626;
-  background-color: #ccc;
+  background-color: #E5E5E5;
 }
 
 .browserupgrade {
@@ -26,6 +26,7 @@ body {
    ========= */
 .navbar {
   background: #ccc;
+  border: none;
 }
 
 .navbar-brand,
@@ -86,19 +87,14 @@ a.navbar-brand.company-name {
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
-  padding: 25px 25px;
+  padding: 75px 25px;
   margin: auto;
   font-family: 'Hind', sans-serif;
 }
 
 .tagline {
-  max-width: 90vh;
-}
-
-.details {
-  font-size: 1.4em;
-  font-weight: bold;
-  color: #cc4c14;
+  max-width: 100vh;
+  color: #ef672b;
 }
 
 .logo-full {
@@ -116,13 +112,13 @@ a.navbar-brand.company-name {
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
-  background-color: #002640;
+  background-color: #305F7F;
   color: #ccc;
 }
 
-#games.section-title {
+#games .section-title {
   color: #ccc;
-  background-color: #002640;
+  background-color: #305F7F;
 }
 
 .games-container {
@@ -131,13 +127,26 @@ a.navbar-brand.company-name {
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   flex: 1;
-  background-color: #002640;
+  padding: 25px 0;
+  background-color: #305F7F;
+}
+
+.featured-game a {
+  color: #ef672b;
+}
+
+.featured-game .details {
+  font-size: 1.4em;
 }
 
 .game {
   flex-basis: auto;
   margin: auto;
   padding: 25px 25px;
+}
+
+.game a {
+  color: #ccc;
 }
 
 .game-screenshot {
@@ -147,8 +156,14 @@ a.navbar-brand.company-name {
 /* =========
     Contact
    ========= */
-  
+#contact {
+  padding-bottom: 50px;
+}
 
+.email-address {
+  font-size: 1.8em;
+  color: #ef672b;
+}
 
 /* =========
     Footer
