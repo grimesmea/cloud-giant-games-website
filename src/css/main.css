@@ -98,8 +98,7 @@ a.navbar-brand.company-name {
 }
 
 .logo-full {
-  max-height: 50vh;
-  width: auto;
+  height: 50vh;
   margin: auto;
 }
 
@@ -140,6 +139,7 @@ a.navbar-brand.company-name {
 }
 
 .game {
+  max-width: 100%;
   flex-basis: auto;
   margin: auto;
   padding: 25px 25px;
@@ -150,7 +150,7 @@ a.navbar-brand.company-name {
 }
 
 .game-screenshot {
-  max-width:100%;
+  max-width: 100%;
 }
 
 /* =========
