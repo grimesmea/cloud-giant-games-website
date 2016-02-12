@@ -1,0 +1,36 @@
+/* ========
+    Games
+   ======== */
+#games {
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #ccc;
+  color: #0f75bc;
+}
+
+
+.section-title {
+  font-weight: bold;
+  color: #000028;
+}
+
+.games-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  flex: 1;
+}
+
+.game {
+  flex-basis: auto;
+  margin: auto;
+  padding: 25px 25px;
+}
+
+.game-screenshot {
+  max-width:100%;
+}
