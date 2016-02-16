@@ -31,92 +31,28 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/404.css">
 
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Hind:400,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <a href class="pull-left">
-          <img class="logo-small" srcset="img/logo_condensed_no_text.png" src="img/logo_full.png" alt="Cloud Giant Games logo">
-      </a>
+    <div class="container">
+      <div id="background" class="mouse-bg"></div>
+      <div id="foreground" class="mouse-bg"></div>
 
-      <a href class="navbar-brand company-name">Cloud Giant Games</a>
-
-      <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse" type="button">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
-      <div class="navbar-collapse collapse navHeaderCollapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#about">About</a></li>
-          <li><a href="#games">Games</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="main-container">
-      <div id="about" class="about-container">
-        <img class="logo-full" srcset="img/logo_full.png" src="img/logo_full.png" alt="Cloud Giant Games logo">
-
-        <h1 class="tagline">
-          Husband-and-wife team creating fun gaming experiences.
-        </h1>
-      </div>
-
-      <div id="games">
-        <div class="section-title">
-          <h1>Games</h1>
-        </div>
-
-        <div class="featured-game">
-          <a href="minformer.html"><img class="game-screenshot" srcset="img/minformer-large.png" src="img/minformer-large.png" alt="Minformer game screenshot"></a>
-          <a href="minformer.html"><h2>Minformer - Wayward in the Woods</h2></a>
-          <p class="details">A minimal 3rd-Person platformer with Oculus Rift DK2 support.</p>
-        </div>
-
-        <div class="games-container">
-          <div class="game">
-            <a href="stardust-symphony.html"><img class="game-screenshot" srcset="img/stardust-symphony.png" src="img/stardust-symphony.png" alt="Stardust Symphony game screenshot"></a>
-            <a href="stardust-symphony.html"><h3>Stardust Symphony</h3></a>
-          </div>
-          <div class="game">
-            <a href="hold-control.html"><img class="game-screenshot" srcset="img/hold-control.png" src="img/hold-control.png" alt="Hold Control to Run Really Fast game screenshot"></a>
-            <a href="hold-control.html"><h3>Hold Control to Run Really Fast</h3></a>
-          </div>
-        </div>
-      </div>
-
-      <div id="contact">
-        <h1 class="section-title">Contact</h1>
-        <p  class="email-address">
-          To get in touch, shoot us an email at:
-          <a href="mailto:cloudgiantgames@gmail.com">cloudgiantgames@gmail.com</a>.
-        </p>
-      </div>
-
-      <footer>
-          <h4>&copy; 2016 Cloud Giant Games</h4>
-      </footer>
+      <img class="error-message" srcset="img/error-message.png" src="img/error-message.png" alt="404 page not found error message">
+      <a href="index.html"><img class="link-home" srcset="img/drift-home.png" src="img/drift-home.png" alt="Return to website homepage"></a>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/vendor/mouse.parallax.js"></script>
 
-    <script src="js/vendor/bootstrap.min.js"></script>
-
-    <script src="js/main.js"></script>
+    <script src="js/404.js"></script>
 
     <!-- <script>
         (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

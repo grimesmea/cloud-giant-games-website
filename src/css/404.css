@@ -1,0 +1,70 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+  background-color: #7fccff;
+	overflow-x: hidden;
+}
+
+.container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	-webkit-align-content: center;
+	align-content: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	text-align: center;
+	min-height: 100vh;
+	padding: 25px;
+}
+
+.error-message {
+	flex-basis: auto;
+	max-width: 100%;
+	margin: auto;
+}
+
+.link-home {
+	flex-basis: auto;
+	max-width: 100%;
+	margin: auto;
+}
+
+.mouse-bg {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+#background {
+	background: url(../img/clouds-layer-1.png);
+}
+
+#foreground {
+	background: url(../img/clouds-layer-2.png);
+}
+
+/* ===============
+		Media Queries
+	=============== */
+@media (max-width: 800px) {
+	#background {
+		background: none;
+	}
+
+	#foreground {
+		background: none;
+	}
+}
