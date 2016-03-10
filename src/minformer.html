@@ -32,7 +32,7 @@
 
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/minformer.css">
 
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
@@ -45,7 +45,7 @@
 
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <a href="index.html" class="pull-left">
-          <img class="logo-small" srcset="img/logo_condensed_no_text.png" src="img/logo_condensed_no_text.png" alt="Cloud Giant Games logo">
+          <img class="logo-small" srcset="img/logo_condensed_no_text.png" src="img/logo_condensed_no_tex.png" alt="Cloud Giant Games logo">
       </a>
 
       <a href="index.html" class="navbar-brand company-name">Cloud Giant Games</a>
@@ -59,46 +59,45 @@
 
       <div class="navbar-collapse collapse navHeaderCollapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#about">About</a></li>
-          <li><a href="#games">Games</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#games">Games</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
         </ul>
       </div>
     </div>
 
     <div class="main-container">
-      <div id="about" class="about-container">
-        <img class="logo-full" srcset="img/logo_full.png" src="img/logo_full.png" alt="Cloud Giant Games logo">
+      <div class="title-container">
+        <div class="title-details">
+          <img class="game-title" srcset="img/minformer_logo.png" src="img/minformer_logo" alt="Minformer title text">
 
-        <h1 class="tagline">Husband-and-wife team creating fun gaming experiences.</h1>
-      </div>
+          <h1 class="tagline">Minimal 3rd-Person platformer with Oculus Rift DK2 support.</h1>
 
-      <div id="games">
-        <div class="section-title">
-          <h1>Games</h1>
-        </div>
-
-        <div class="featured-game">
-          <a href="minformer.html"><img class="game-screenshot" srcset="img/minformer_screenshot_3.png" src="img/minformer_screenshot_3.png" alt="Minformer game screenshot"></a>
-          <a href="minformer.html"><h2>Minformer - Wayward in the Woods</h2></a>
-          <p class="details">A minimal 3rd-Person platformer with Oculus Rift DK2 support.</p>
-        </div>
-
-        <div class="games-container">
-          <div class="game">
-            <a href="stardust-symphony.html"><img class="game-screenshot" srcset="img/stardust_symphony_screenshot_1.png" src="img/stardust_symphony_screenshot_1.png" alt="Stardust Symphony game screenshot"></a>
-            <a href="stardust-symphony.html"><h3>Stardust Symphony</h3></a>
-          </div>
-          <div class="game">
-            <a href="hold-control.html"><img class="game-screenshot" srcset="img/hold_control.png" src="img/hold_control.png" alt="Hold Control to Run Really Fast game screenshot"></a>
-            <a href="hold-control.html"><h3>Hold Control to Run Really Fast</h3></a>
+          <div class="dropdown">
+            <button class="btn btn-default download" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Download
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdown-menu">
+              <li><a href="Minformer-v.1.0.zip">Windows x64</a></li>
+              <li><a href="Minformer-v.1.0.zip">Windows x32</a></li>
+              <li><a href="Minformer-v.1.0.zip">OSX x64 (No Rift Support)</a></li>
+              <li><a href="Minformer-v.1.0.zip">OSX x64 (No Rift Support)</a></li>
+            </ul>
           </div>
         </div>
       </div>
 
-      <div id="contact">
-        <h1 class="section-title">Contact</h1>
-        <p  class="email-address">To get in touch, shoot us an email at: <a href="mailto:cloudgiantgames@gmail.com">cloudgiantgames@gmail.com</a>.</p>
+      <div class="about-container">
+        <img class="game-screenshot" srcset="img/minformer_screenshot_1.png" src="img/minformer_screenshot_1.png" alt="Minformer game screenshot">
+
+        <h2 class="text">We made this to experiment with a few different camera modes for 3rd-Person VR Games. We wanted to try out what works and what just makes people dizzy.</h2>
+
+        <img class="game-screenshot" srcset="img/minformer_screenshot_4.png" src="img/minformer_screenshot_4.png" alt="Minformer game screenshot">
+
+        <div id="contact">
+          <h2 class="text">If you'd like, you can check out the game and let us know your thoughts on <a target="_blank" href="https://share.oculus.com/app/minformer---wayward-in-the-woods">Occulus Share</a> or email us at <a target="_blank" href="mailto:cloudgiantgames@gmail.com">cloudgiantgames@gmail.com</a></h2>
+        </div>
       </div>
 
       <footer>

@@ -49,11 +49,11 @@ body {
 }
 
 #background {
-	background: url(../img/clouds-layer-1.png);
+	background: url(../img/clouds_layer_1.png);
 }
 
 #foreground {
-	background: url(../img/clouds-layer-2.png);
+	background: url(../img/clouds_layer_2.png);
 }
 
 /* ===============

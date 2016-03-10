@@ -75,6 +75,84 @@ a.navbar-brand.company-name {
   padding: 25px 25px;
 }
 
+.text {
+  max-width: 800px;
+  margin: auto;
+}
+
+.download {
+  margin: 50px auto;
+  padding: 15px 25px;
+  font-size: 2em;
+  font-weight: bold;
+  background-color: #2eff53;
+}
+
+.download:hover {
+  color: #ccc;
+  background-color: #126623;
+}
+
+.dropdown-menu {
+  left: 50%;
+  right: auto;
+  transform: translate(-50%, 0);
+  margin-top: -50px;
+}
+
+/* ========
+    Title
+   ======== */
+.title-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-content: center;
+  align-content: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 75vh;
+  margin: auto 0;
+  font-family: 'Hind', sans-serif;
+  background: url("../img/minformer_screenshot_2.png") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.title-details {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-content: center;
+  align-content: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 75vh;
+  padding: 125px 25px 75px 25px;
+  background-color: rgba(33,33,33,0.4);
+  width: 100%;
+  margin: 0;
+}
+
+.game-title {
+  max-width: 100%;
+  height: auto;
+  padding: 20px 50px;
+  margin: auto;
+}
+
+.tagline {
+  color: #ccc;
+}
+
+.title-container .game-description {
+  padding-top: 35px;
+  color: #ccc;
+}
+
 /* ========
     About
    ======== */
@@ -88,36 +166,19 @@ a.navbar-brand.company-name {
   -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
-  padding: 125px 25px 75px 25px;
   margin: auto;
-  font-family: 'Hind', sans-serif;
+  padding-top: 50px;
 }
 
-.logo-full {
-  height: 50vh;
+.game-screenshot {
+  max-width:100%;
+  max-height: 75vh;
   margin: auto;
+  padding: 50px 0;
 }
 
-.tagline {
-  color: #ef672b;
-}
-
-/* ========
-    Games
-   ======== */
-#games {
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  text-align: center;
-  background-color: #305f7f;
-  color: #ccc;
-}
-
-#games .section-title {
-  color: #ccc;
-  background-color: #305f7f;
+.about-container .game-description {
+  max-width: 900px;
 }
 
 .games-container {
@@ -126,31 +187,12 @@ a.navbar-brand.company-name {
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   flex: 1;
-  padding: 25px 0;
-  background-color: #305f7f;
-}
-
-.featured-game a {
-  color: #ef672b;
-}
-
-.featured-game .details {
-  font-size: 1.4em;
 }
 
 .game {
-  max-width: 100%;
   flex-basis: auto;
   margin: auto;
   padding: 25px 25px;
-}
-
-.game a {
-  color: #ccc;
-}
-
-.game-screenshot {
-  max-width: 100%;
 }
 
 /* =========
@@ -158,11 +200,6 @@ a.navbar-brand.company-name {
    ========= */
 #contact {
   padding-bottom: 50px;
-}
-
-.email-address {
-  font-size: 1.8em;
-  color: #ef672b;
 }
 
 /* =========

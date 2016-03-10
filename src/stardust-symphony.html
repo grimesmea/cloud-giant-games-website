@@ -31,28 +31,74 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/404.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stardust-symphony.css">
 
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:400,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="container">
-      <div id="background" class="mouse-bg"></div>
-      <div id="foreground" class="mouse-bg"></div>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <a href="index.html" class="pull-left">
+          <img class="logo-small" srcset="img/logo_condensed_no_text.png" src="img/logo_condensed_no_text.png" alt="Stardust Symphony title text">
+      </a>
 
-      <img class="error-message" srcset="img/error_message.png" src="img/error_message.png" alt="404 page not found error message">
-      <a href="index.html"><img class="link-home" srcset="img/drift_home.png" src="img/drift_home.png" alt="Return to website homepage"></a>
+      <a href="index.html" class="navbar-brand company-name">Cloud Giant Games</a>
+
+      <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div class="navbar-collapse collapse navHeaderCollapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#games">Games</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="title-container">
+        <div class="title-details">
+          <img class="game-title" srcset="img/bcg_title.png" src="img/bcg_title.png" alt="Stardust Symphony game screenshot">
+
+          <h1 class="tagline">You have been chosen.</h1>
+
+          <h3 class="game-description">Imbued with divine power and equipment, you carry the will of your deity on your shoulders. Thrust into holy warfare, you will claim space and time itself for your patron.</h3>
+
+          <a href="Stardust-Symphony-v.1.0.zip"><button type="submit" class="btn btn-default download">Download</button></a>
+
+        </div>
+      </div>
+
+      <div class="about-container">
+        <img class="game-screenshot" srcset="img/stardust_symphony_screenshot_2.png" src="img/stardust_symphony_screenshot_2.png" alt="Stardust Symphony game screenshot">
+
+        <h2 class="text">Stardust Symphony is a 2D brawler. Local multiplayer allows you to battle your friends. If you don't have any friends around (or even if you do) enter a bot battle to test your reflexes.</h2>
+
+        <img class="game-screenshot" srcset="img/stardust_symphony_screenshot_3.png" src="img/stardust_symphony_screenshot_3.png" alt="Stardust Symphony game screenshot">
+      </div>
+
+      <footer>
+          <h4>&copy; 2016 Cloud Giant Games</h4>
+      </footer>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-    <script src="js/vendor/mouse.parallax.js"></script>
 
-    <script src="js/404.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/main.js"></script>
 
     <!-- <script>
         (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

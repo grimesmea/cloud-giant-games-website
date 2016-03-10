@@ -1,3 +1,7 @@
 # Paint.net Files #
 ###################
 *.pdn
+
+# Node.js Modules #
+###################
+node_modules/
