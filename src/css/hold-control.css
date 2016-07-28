@@ -1,0 +1,183 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #262626;
+	background-color: #e5e5e5;
+}
+
+.browserupgrade {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+/* =========
+		Navbar
+	========= */
+.navbar {
+	background: #ccc;
+	border: none;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+	font-size: 1.8em;
+}
+
+.navbar-toggle {
+	border: none;
+}
+
+.navbar-collapse {
+	margin-right: 15px;
+	border: none;
+}
+
+.logo-small {
+	max-height: 50px;
+	margin-left: 10px;
+}
+
+a.navbar-brand.company-name {
+	color: #0f75bc;
+	font-weight: bold;
+}
+
+/* =========================
+		Main Content Container
+	========================= */
+.main-container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	-webkit-align-content: center;
+	align-content: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	text-align: center;
+	min-height: 100vh;
+	top: -50px;
+	padding: 0;
+}
+
+.section-title {
+	padding: 25px 25px;
+}
+
+.game-description {
+	max-width: 800px;
+	margin: auto;
+}
+
+.download {
+	margin: 50px auto;
+	padding: 15px 25px;
+	font-size: 2em;
+	font-weight: bold;
+	background-color: #2eff53;
+}
+
+.download:hover{
+	color: #ccc;
+	background-color: #126623;
+}
+
+/* ========
+		Game
+	======== */
+.game-container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	-webkit-align-content: center;
+	align-content: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	text-align: center;
+	min-height: 100vh;	
+	padding: 0;
+	top: -50px;
+}
+
+.unity-acknowledgement {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	-webkit-align-content: center;
+	align-content: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	text-align: center;
+	padding: 25px 25px;
+	width: 100%;
+	margin: 0;
+}
+
+/* ================
+		Unity Player
+	================= */
+div.content {
+	margin: auto;
+	width: 800px;
+}
+div.broken,
+div.missing {
+	margin: auto;
+	position: relative;
+	top: 50%;
+	width: 193px;
+}
+div.broken a,
+div.missing a {
+	height: 63px;
+	position: relative;
+	top: -31px;
+}
+div.broken img,
+div.missing img {
+	border-width: 0px;
+}
+div.broken {
+	display: none;
+}
+div#unityPlayer {
+	-webkit-align-content: center;
+	align-content: center;
+	cursor: default;
+	height: 480px;
+	width: 800px;
+}
+
+/* =========
+		Footer
+	========= */
+footer {
+	padding: 10px 15px;
+	text-align: left;
+}
+
+/* ===============
+		Media Queries
+	=============== */
+@media (max-width: 600px) {
+	.navbar {
+		padding: 0 20px;
+	}
+
+	.company-name {
+		display: none;
+	}
+}
