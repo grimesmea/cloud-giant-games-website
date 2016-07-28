@@ -76,9 +76,9 @@ a.navbar-brand.company-name {
 }
 
 /* ========
-    About
+    Logo
    ======== */
-.about-container {
+.logo-container {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
@@ -94,74 +94,11 @@ a.navbar-brand.company-name {
 }
 
 .logo-full {
-  height: 50vh;
+  height: 60vh;
   margin: auto;
 }
 
 .tagline {
-  color: #ef672b;
-}
-
-/* ========
-    Games
-   ======== */
-#games {
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  text-align: center;
-  background-color: #305f7f;
-  color: #ccc;
-}
-
-#games .section-title {
-  color: #ccc;
-  background-color: #305f7f;
-}
-
-.games-container {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  flex: 1;
-  padding: 25px 0;
-  background-color: #305f7f;
-}
-
-.featured-game a {
-  color: #ef672b;
-}
-
-.featured-game .details {
-  font-size: 1.4em;
-}
-
-.game {
-  max-width: 100%;
-  flex-basis: auto;
-  margin: auto;
-  padding: 25px 25px;
-}
-
-.game a {
-  color: #ccc;
-}
-
-.game-screenshot {
-  max-width: 100%;
-}
-
-/* =========
-    Contact
-   ========= */
-#contact {
-  padding-bottom: 50px;
-}
-
-.email-address {
-  font-size: 1.8em;
   color: #ef672b;
 }
 
