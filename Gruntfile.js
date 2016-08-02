@@ -78,8 +78,11 @@ module.exports = function(grunt) {
         files: {
           'dist/<%= dir.js %>/main.js': ['src/<%= dir.js %>/main.js'],
           'dist/<%= dir.js %>/404.js': ['src/<%= dir.js %>/404.js'],
+          'dist/<%= dir.js %>/vendor/bootstrap.min.js': ['src/<%= dir.js %>/vendor/bootstrap.min.js'],
+          'dist/<%= dir.js %>/vendor/jquery-1.11.2.min.js': ['src/<%= dir.js %>/vendor/jquery-1.11.2.min.js'],
+          'dist/<%= dir.js %>/vendor/modernizr-2.8.3-respond-1.4.2.min.js': ['src/<%= dir.js %>/vendor/modernizr-2.8.3-respond-1.4.2.min.js'],
           'dist/<%= dir.js %>/vendor/mouse.parallax.min.js': ['src/<%= dir.js %>/vendor/mouse.parallax.js'],
-          'dist/<%= dir.js %>/vendor/mouse.parallax.js': ['src/<%= dir.js %>/404.js'],
+          'dist/<%= dir.js %>/vendor/404.js': ['src/<%= dir.js %>/404.js'],
         }
       },
     },
@@ -98,8 +101,11 @@ module.exports = function(grunt) {
         files: {
           'dist/<%= dir.css %>/main.css': ['src/index.html'],
           'dist/<%= dir.css %>/bootstrap.min.css': ['src/minformer.html'],
+          'dist/<%= dir.css %>/about.css': ['src/about.html'],
           'dist/<%= dir.css %>/404.css': ['src/404.html'],
+          'dist/<%= dir.css %>/games.css': ['src/games.html'],
           'dist/<%= dir.css %>/minformer.css': ['src/minformer.html'],
+          'dist/<%= dir.css %>/hold-control.css': ['src/hold-control.html'],
           'dist/<%= dir.css %>/stardust-symphony.css': ['src/stardust-symphony.html']
         }
       }
@@ -117,11 +123,14 @@ module.exports = function(grunt) {
          },
          files: {
             'dist/<%= dir.css %>/main.css': ['dist/<%= dir.css %>/main.css'],
+            'dist/<%= dir.css %>/about.css': ['dist/<%= dir.css %>/about.css'],
+            'dist/<%= dir.css %>/games.css': ['dist/<%= dir.css %>/games.css'],
+            'dist/<%= dir.css %>/hold-control.css': ['dist/<%= dir.css %>/hold-control.css'],
             'dist/<%= dir.css %>/minformer.css': ['dist/<%= dir.css %>/minformer.css'],
             'dist/<%= dir.css %>/stardust-symphony.css': ['dist/<%= dir.css %>/stardust-symphony.css'],
             'dist/<%= dir.css %>/404.css': ['dist/<%= dir.css %>/404.css'],
             'dist/<%= dir.css %>/botstrap.min.css': ['dist/<%= dir.css %>/bootstrap.min.css'],
-            'dist/<%= dir.css %>/normalize.css': ['src/<%= dir.css %>/normalize.css']
+            'dist/<%= dir.css %>/normalize.min.css': ['src/<%= dir.css %>/normalize.min.css']
          }
       }
     },
@@ -139,6 +148,9 @@ module.exports = function(grunt) {
         },
         files: {
           'dist/index.html': ['src/index.html'],
+          'dist/about.html': ['src/about.html'],
+          'dist/games.html': ['src/games.html'],
+          'dist/hold-control.html': ['src/hold-control.html'],
           'dist/minformer.html': ['src/minformer.html'],
           'dist/stardust-symphony.html': ['src/stardust-symphony.html'],
           'dist/404.html': ['src/404.html']

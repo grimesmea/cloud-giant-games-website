@@ -86,16 +86,17 @@ a.navbar-brand.company-name {
 	text-align: left;
 	padding: 125px 25px 75px 25px;
 	margin: auto;
+	max-width: 900px;
 	font-family: 'Hind', sans-serif;
 }
 
-.image-full {
-	max-width: 900px;
+.about-image {
+	max-width: 100%;
 	margin: auto;
 }
 
 .about-text {
-	max-width: 900px;
+	max-width: 100%;
 }
 
 /* =========
