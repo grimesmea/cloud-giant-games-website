@@ -78,7 +78,6 @@ module.exports = function(grunt) {
         files: {
           'dist/<%= dir.js %>/main.js': ['src/<%= dir.js %>/main.js'],
           'dist/<%= dir.js %>/404.js': ['src/<%= dir.js %>/404.js'],
-          'dist/<%= dir.js %>/vendor/bootstrap.min.js': ['src/<%= dir.js %>/vendor/bootstrap.min.js'],
           'dist/<%= dir.js %>/vendor/jquery-1.11.2.min.js': ['src/<%= dir.js %>/vendor/jquery-1.11.2.min.js'],
           'dist/<%= dir.js %>/vendor/modernizr-2.8.3-respond-1.4.2.min.js': ['src/<%= dir.js %>/vendor/modernizr-2.8.3-respond-1.4.2.min.js'],
           'dist/<%= dir.js %>/vendor/mouse.parallax.min.js': ['src/<%= dir.js %>/vendor/mouse.parallax.js'],
@@ -100,12 +99,12 @@ module.exports = function(grunt) {
         },
         files: {
           'dist/<%= dir.css %>/main.css': ['src/index.html'],
-          'dist/<%= dir.css %>/bootstrap.min.css': ['src/minformer.html'],
+          'dist/<%= dir.css %>/bootstrap.min.css': ['src/index.html', 'src/404.html', 'src/games.html', 'src/hold-control.html', 'src/about.html', 'src/minformer.html','src/stardust-symphony.html'],
           'dist/<%= dir.css %>/about.css': ['src/about.html'],
           'dist/<%= dir.css %>/404.css': ['src/404.html'],
+          'dist/<%= dir.css %>/hold-control.css': ['src/hold-control.html'],
           'dist/<%= dir.css %>/games.css': ['src/games.html'],
           'dist/<%= dir.css %>/minformer.css': ['src/minformer.html'],
-          'dist/<%= dir.css %>/hold-control.css': ['src/hold-control.html'],
           'dist/<%= dir.css %>/stardust-symphony.css': ['src/stardust-symphony.html']
         }
       }
@@ -125,11 +124,11 @@ module.exports = function(grunt) {
             'dist/<%= dir.css %>/main.css': ['dist/<%= dir.css %>/main.css'],
             'dist/<%= dir.css %>/about.css': ['dist/<%= dir.css %>/about.css'],
             'dist/<%= dir.css %>/games.css': ['dist/<%= dir.css %>/games.css'],
-            'dist/<%= dir.css %>/hold-control.css': ['dist/<%= dir.css %>/hold-control.css'],
+            // 'dist/<%= dir.css %>/bootstrap.min.css': ['dist/<%= dir.css %>/bootstap.min.css'], -- Taken out due to styling getting erased when running task.
+            // 'dist/<%= dir.css %>/hold-control.css': ['dist/<%= dir.css %>/hold-control.css'], -- Taken out due to styling getting erased when running task.
             'dist/<%= dir.css %>/minformer.css': ['dist/<%= dir.css %>/minformer.css'],
             'dist/<%= dir.css %>/stardust-symphony.css': ['dist/<%= dir.css %>/stardust-symphony.css'],
             'dist/<%= dir.css %>/404.css': ['dist/<%= dir.css %>/404.css'],
-            'dist/<%= dir.css %>/botstrap.min.css': ['dist/<%= dir.css %>/bootstrap.min.css'],
             'dist/<%= dir.css %>/normalize.min.css': ['src/<%= dir.css %>/normalize.min.css']
          }
       }
@@ -155,6 +154,25 @@ module.exports = function(grunt) {
           'dist/stardust-symphony.html': ['src/stardust-symphony.html'],
           'dist/404.html': ['src/404.html']
         }
+      }
+    },
+
+
+    /**
+     * Copy Files
+     * @github.com/gruntjs/grunt-contrib-copy
+     */
+    copy: {
+      main: {
+        files: [
+          // includes files within path
+          {expand: true, cwd: 'src/js/vendor', src: ['bootstrap.min.js'], dest: 'dist/js/vendor/', filter: 'isFile'}, // TODO: Find reason for cssmin messing up styling and removed.
+          {expand: true, cwd: 'src/css', src: ['hold-control.css'], dest: 'dist/css/', filter: 'isFile'},  // TODO: Find reason for cssmin messing up styling and removed.
+          {expand: true, cwd: 'src', src: 'browserconfig.xml', dest: 'dist/', filter: 'isFile'},
+          {expand: true, cwd: 'src', src: 'manifest.json', dest: 'dist/', filter: 'isFile'},
+          {expand: true, cwd: 'src/css', src: 'bootstrap.min.css', dest: 'dist/css/'},
+          {expand: true, cwd: 'src', src: 'HoldCtrlWeb.unity3d', dest: 'dist/'},
+        ]
       }
     },
 
@@ -206,18 +224,6 @@ module.exports = function(grunt) {
 
 
   /**
-   * Production task, use for deploying
-   * run `grunt production`
-   */
-  grunt.registerTask('production', [
-    'jshint',           // JShint
-    'uglify',           // Minifiy JS files
-    'svgmin',           // Compress svg files
-    'imagemin',         // Compress jpg/jpeg + png files
-  ]);
-
-
-  /**
    * Default Task
    * run `grunt`
    */
@@ -228,7 +234,8 @@ module.exports = function(grunt) {
     'uncss',            // Remove unused CSS
     'cssmin',           // Minifiy CSS files
     'htmlmin',          // Minifiy HTML files
-    'imagemin',           // Compress images
+    'imagemin',         // Compress jpg/jpeg + png files
+    'copy',             // Copy files that do not need to be modified
   ]);
 
 
@@ -243,4 +250,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-uncss');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 };
